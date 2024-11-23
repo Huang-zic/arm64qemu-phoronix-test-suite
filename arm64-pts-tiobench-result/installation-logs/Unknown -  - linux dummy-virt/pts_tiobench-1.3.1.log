@@ -1,0 +1,188 @@
+tiobench-20170504/scripts/README
+tiobench-20170504/BUGS
+tiobench-20170504/.gitignore
+tiobench-20170504/scripts/
+tiobench-20170504/README.md
+tiobench-20170504/constants.h
+tiobench-20170504/ChangeLog
+tiobench-20170504/scripts/bigbench.sh
+tiobench-20170504/scripts/tiosum.pl
+tiobench-20170504/tiotest.h
+tiobench-20170504/TODO
+tiobench-20170504/crc32.h
+tiobench-20170504/COPYING
+tiobench-20170504/tiotest.c
+tiobench-20170504/
+tiobench-20170504/tiobench.pl
+tiobench-20170504/.travis.yml
+tiobench-20170504/test_largefiles.c
+tiobench-20170504/crc32.c
+tiobench-20170504/Makefile
+tiobench-20170504/scripts/makeimages.pl
+gcc -c -DUSE_LARGEFILES -O2 -Wall  -DUSE_LARGEFILES test_largefiles.c -o test_largefiles.o
+gcc -c -O2 -Wall  -DUSE_LARGEFILES tiotest.c -o tiotest.o
+gcc -c -O2 -Wall  -DUSE_LARGEFILES crc32.c -o crc32.o
+In file included from test_largefiles.c:23:
+test_largefiles.c: In function ‘main’:
+test_largefiles.c:60:31: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long int’ [-Wformat=]
+   60 |     printf( xstr(TIO_ftruncate) "()'ing large test file to size %Lx\n", LARGEFILE_SIZE);
+      |                               ^
+constants.h:75:17: note: in definition of macro ‘str’
+   75 | #define str(s) #s
+      |                 ^
+test_largefiles.c:60:13: note: in expansion of macro ‘xstr’
+   60 |     printf( xstr(TIO_ftruncate) "()'ing large test file to size %Lx\n", LARGEFILE_SIZE);
+      |             ^~~~
+test_largefiles.c:70:30: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘TIO_off_t’ {aka ‘long int’} [-Wformat=]
+   70 |         printf(xstr(TIO_lseek) "()ing to offset %Lx\n", offset);
+      |                              ^
+constants.h:75:17: note: in definition of macro ‘str’
+   75 | #define str(s) #s
+      |                 ^
+test_largefiles.c:70:16: note: in expansion of macro ‘xstr’
+   70 |         printf(xstr(TIO_lseek) "()ing to offset %Lx\n", offset);
+      |                ^~~~
+test_largefiles.c:80:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘ssize_t’ {aka ‘long int’} [-Wformat=]
+   80 |             fprintf(stderr, "Error read()ing, %d byte(s) read (!= %d)\n", count, sizeof(data));
+      |                                               ~^                          ~~~~~
+      |                                                |                          |
+      |                                                int                        ssize_t {aka long int}
+      |                                               %ld
+test_largefiles.c:80:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+   80 |             fprintf(stderr, "Error read()ing, %d byte(s) read (!= %d)\n", count, sizeof(data));
+      |                                                                   ~^             ~~~~~~~~~~~~
+      |                                                                    |             |
+      |                                                                    int           long unsigned int
+      |                                                                   %ld
+test_largefiles.c:91:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘ssize_t’ {aka ‘long int’} [-Wformat=]
+   91 |             fprintf(stderr, "Error " xstr(TIO_pread) "()ing, %d byte(s) read (!= %d)\n", count, sizeof(data));
+      |                             ^~~~~~~~                                                     ~~~~~
+      |                                                                                          |
+      |                                                                                          ssize_t {aka long int}
+test_largefiles.c:91:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+   91 |             fprintf(stderr, "Error " xstr(TIO_pread) "()ing, %d byte(s) read (!= %d)\n", count, sizeof(data));
+      |                             ^~~~~~~~                                                            ~~~~~~~~~~~~
+      |                                                                                                 |
+      |                                                                                                 long unsigned int
+tiotest.c: In function ‘do_generic_test’:
+tiotest.c:635:49: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 5 has type ‘TIO_off_t’ {aka ‘long int’} [-Wformat=]
+  635 |                                 fprintf(stderr, "this_chunk_size=%ld, fd=%d, offset=" OFFSET_FORMAT
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  636 |                                         "\n", this_chunk_size, fd, d->fileOffset);
+      |                                                                    ~~~~~~~~~~~~~
+      |                                                                     |
+      |                                                                     TIO_off_t {aka long int}
+test_largefiles.c:103:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘ssize_t’ {aka ‘long int’} [-Wformat=]
+  103 |             fprintf(stderr, "Error " xstr(TIO_pwrite) "()ing, %d bytes written (!= %d)\n", count, sizeof(data));
+      |                             ^~~~~~~~                                                       ~~~~~
+      |                                                                                            |
+      |                                                                                            ssize_t {aka long int}
+In file included from tiotest.c:23:
+constants.h:86:29: note: format string is defined here
+   86 | #define OFFSET_FORMAT  "0x%Lx"
+      |                           ~~^
+      |                             |
+      |                             long long unsigned int
+      |                           %lx
+test_largefiles.c:103:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  103 |             fprintf(stderr, "Error " xstr(TIO_pwrite) "()ing, %d bytes written (!= %d)\n", count, sizeof(data));
+      |                             ^~~~~~~~                                                              ~~~~~~~~~~~~
+      |                                                                                                   |
+      |                                                                                                   long unsigned int
+test_largefiles.c:108:29: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 2 has type ‘long int’ [-Wformat=]
+  108 |         printf(xstr(TIO_mmap) "()ing chunk of size %Lx at offset %Lx\n", CHUNK_SIZE, offset);
+      |                             ^
+constants.h:75:17: note: in definition of macro ‘str’
+   75 | #define str(s) #s
+      |                 ^
+test_largefiles.c:108:16: note: in expansion of macro ‘xstr’
+  108 |         printf(xstr(TIO_mmap) "()ing chunk of size %Lx at offset %Lx\n", CHUNK_SIZE, offset);
+      |                ^~~~
+test_largefiles.c:108:29: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘TIO_off_t’ {aka ‘long int’} [-Wformat=]
+  108 |         printf(xstr(TIO_mmap) "()ing chunk of size %Lx at offset %Lx\n", CHUNK_SIZE, offset);
+      |                             ^
+constants.h:75:17: note: in definition of macro ‘str’
+   75 | #define str(s) #s
+      |                 ^
+test_largefiles.c:108:16: note: in expansion of macro ‘xstr’
+  108 |         printf(xstr(TIO_mmap) "()ing chunk of size %Lx at offset %Lx\n", CHUNK_SIZE, offset);
+      |                ^~~~
+test_largefiles.c:151:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘ssize_t’ {aka ‘long int’} [-Wformat=]
+  151 |             fprintf(stderr, "Error " xstr(TIO_pread) "()ing, %d byte(s) read (!= %d)\n", count, sizeof(data));
+      |                             ^~~~~~~~                                                     ~~~~~
+      |                                                                                          |
+      |                                                                                          ssize_t {aka long int}
+test_largefiles.c:151:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  151 |             fprintf(stderr, "Error " xstr(TIO_pread) "()ing, %d byte(s) read (!= %d)\n", count, sizeof(data));
+      |                             ^~~~~~~~                                                            ~~~~~~~~~~~~
+      |                                                                                                 |
+      |                                                                                                 long unsigned int
+tiotest.c: In function ‘do_pread_operation’:
+tiotest.c:1389:41: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘TIO_off_t’ {aka ‘long int’} [-Wformat=]
+ 1389 |                         fprintf(stderr, "Tried to read %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only read %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                  ~~~~~~
+      |                                                                                                                                                                                 |
+      |                                                                                                                                                                                 TIO_off_t {aka long int}
+constants.h:86:29: note: format string is defined here
+   86 | #define OFFSET_FORMAT  "0x%Lx"
+      |                           ~~^
+      |                             |
+      |                             long long unsigned int
+      |                           %lx
+tiotest.c:1389:41: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 6 has type ‘TIO_off_t’ {aka ‘long int’} [-Wformat=]
+ 1389 |                         fprintf(stderr, "Tried to read %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only read %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+constants.h:86:29: note: format string is defined here
+   86 | #define OFFSET_FORMAT  "0x%Lx"
+      |                           ~~^
+      |                             |
+      |                             long long unsigned int
+      |                           %lx
+tiotest.c:1389:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘ssize_t’ {aka ‘long int’} [-Wformat=]
+ 1389 |                         fprintf(stderr, "Tried to read %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only read %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                               ~~
+      |                                                                                                                                                                                                                              |
+      |                                                                                                                                                                                                                              ssize_t {aka long int}
+tiotest.c:1389:151: note: format string is defined here
+ 1389 |                         fprintf(stderr, "Tried to read %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only read %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                                                                                                                                      ~^
+      |                                                                                                                                                       |
+      |                                                                                                                                                       int
+      |                                                                                                                                                      %ld
+tiotest.c: In function ‘do_pwrite_operation’:
+tiotest.c:1417:41: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘TIO_off_t’ {aka ‘long int’} [-Wformat=]
+ 1417 |                         fprintf(stderr, "Tried to write %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only wrote %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                   ~~~~~~
+      |                                                                                                                                                                                   |
+      |                                                                                                                                                                                   TIO_off_t {aka long int}
+constants.h:86:29: note: format string is defined here
+   86 | #define OFFSET_FORMAT  "0x%Lx"
+      |                           ~~^
+      |                             |
+      |                             long long unsigned int
+      |                           %lx
+tiotest.c:1417:41: warning: format ‘%Lx’ expects argument of type ‘long long unsigned int’, but argument 6 has type ‘TIO_off_t’ {aka ‘long int’} [-Wformat=]
+ 1417 |                         fprintf(stderr, "Tried to write %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only wrote %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+constants.h:86:29: note: format string is defined here
+   86 | #define OFFSET_FORMAT  "0x%Lx"
+      |                           ~~^
+      |                             |
+      |                             long long unsigned int
+      |                           %lx
+tiotest.c:1417:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘ssize_t’ {aka ‘long int’} [-Wformat=]
+ 1417 |                         fprintf(stderr, "Tried to write %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only wrote %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                ~~
+      |                                                                                                                                                                                                                                |
+      |                                                                                                                                                                                                                                ssize_t {aka long int}
+tiotest.c:1417:153: note: format string is defined here
+ 1417 |                         fprintf(stderr, "Tried to write %ld bytes from offset " OFFSET_FORMAT " of file %s of length " OFFSET_FORMAT ", but only wrote %d bytes\n", d->blockSize, offset, d->fileName, d->fileSizeInMBytes*MB, rc);
+      |                                                                                                                                                        ~^
+      |                                                                                                                                                         |
+      |                                                                                                                                                         int
+      |                                                                                                                                                        %ld
+gcc -o test_largefiles test_largefiles.o
+gcc -o tiotest  tiotest.o crc32.o -lpthread
+
+./tiobench.pl --help for usage options
+

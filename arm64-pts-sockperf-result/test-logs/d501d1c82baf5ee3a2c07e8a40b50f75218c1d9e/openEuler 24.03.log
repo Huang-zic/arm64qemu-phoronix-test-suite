@@ -1,0 +1,150 @@
+#####
+openEuler 24.03 - Run 1
+2024-11-22 09:26:00
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:sockperf: using recvfrom() to block on socket(s)
+
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: [Total Run] RunTime=1.000 sec; Warm up time=400 msec; SentMessages=63480; ReceivedMessages=63479
+sockperf: ========= Printing statistics for Server No: 0
+sockperf: [Valid Duration] RunTime=1.000 sec; SentMessages=63479; ReceivedMessages=63479
+sockperf: [2;35m====> avg-latency=7.833 (std-dev=1.564)[0m
+sockperf: # dropped messages = 0; # duplicated messages = 0; # out-of-order messages = 0
+sockperf: Summary: Latency is 7.833 usec
+sockperf: [2;35mTotal 63479 observations[0m; each percentile contains 634.79 observations
+sockperf: ---> <MAX> observation =  123.565
+sockperf: ---> percentile 99.999 =  114.125
+sockperf: ---> percentile 99.990 =   75.560
+sockperf: ---> percentile 99.900 =   27.330
+sockperf: ---> percentile 99.000 =    9.795
+sockperf: ---> percentile 90.000 =    8.000
+sockperf: ---> percentile 75.000 =    7.860
+sockperf: ---> percentile 50.000 =    7.720
+sockperf: ---> percentile 25.000 =    7.610
+sockperf: ---> <MIN> observation =    5.655
+
+#####
+openEuler 24.03 - Run 2
+2024-11-22 09:26:12
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:sockperf: using recvfrom() to block on socket(s)
+
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: [Total Run] RunTime=1.000 sec; Warm up time=400 msec; SentMessages=63179; ReceivedMessages=63178
+sockperf: ========= Printing statistics for Server No: 0
+sockperf: [Valid Duration] RunTime=1.000 sec; SentMessages=63178; ReceivedMessages=63178
+sockperf: [2;35m====> avg-latency=7.871 (std-dev=1.450)[0m
+sockperf: # dropped messages = 0; # duplicated messages = 0; # out-of-order messages = 0
+sockperf: Summary: Latency is 7.871 usec
+sockperf: [2;35mTotal 63178 observations[0m; each percentile contains 631.78 observations
+sockperf: ---> <MAX> observation =  152.265
+sockperf: ---> percentile 99.999 =  103.625
+sockperf: ---> percentile 99.990 =   55.995
+sockperf: ---> percentile 99.900 =   27.780
+sockperf: ---> percentile 99.000 =    9.930
+sockperf: ---> percentile 90.000 =    8.035
+sockperf: ---> percentile 75.000 =    7.895
+sockperf: ---> percentile 50.000 =    7.760
+sockperf: ---> percentile 25.000 =    7.655
+sockperf: ---> <MIN> observation =    5.560
+
+#####
+openEuler 24.03 - Run 3
+2024-11-22 09:26:25
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:sockperf: using recvfrom() to block on socket(s)
+
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: [Total Run] RunTime=1.000 sec; Warm up time=400 msec; SentMessages=63668; ReceivedMessages=63667
+sockperf: ========= Printing statistics for Server No: 0
+sockperf: [Valid Duration] RunTime=1.000 sec; SentMessages=63667; ReceivedMessages=63667
+sockperf: [2;35m====> avg-latency=7.808 (std-dev=1.503)[0m
+sockperf: # dropped messages = 0; # duplicated messages = 0; # out-of-order messages = 0
+sockperf: Summary: Latency is 7.808 usec
+sockperf: [2;35mTotal 63667 observations[0m; each percentile contains 636.67 observations
+sockperf: ---> <MAX> observation =  133.875
+sockperf: ---> percentile 99.999 =   95.615
+sockperf: ---> percentile 99.990 =   70.950
+sockperf: ---> percentile 99.900 =   27.700
+sockperf: ---> percentile 99.000 =    9.855
+sockperf: ---> percentile 90.000 =    7.970
+sockperf: ---> percentile 75.000 =    7.830
+sockperf: ---> percentile 50.000 =    7.695
+sockperf: ---> percentile 25.000 =    7.590
+sockperf: ---> <MIN> observation =    5.455
+
+#####
+openEuler 24.03 - Run 4
+2024-11-22 09:26:37
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:sockperf: using recvfrom() to block on socket(s)
+
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: [Total Run] RunTime=1.000 sec; Warm up time=400 msec; SentMessages=63398; ReceivedMessages=63397
+sockperf: ========= Printing statistics for Server No: 0
+sockperf: [Valid Duration] RunTime=1.000 sec; SentMessages=63397; ReceivedMessages=63397
+sockperf: [2;35m====> avg-latency=7.849 (std-dev=1.821)[0m
+sockperf: # dropped messages = 0; # duplicated messages = 0; # out-of-order messages = 0
+sockperf: Summary: Latency is 7.849 usec
+sockperf: [2;35mTotal 63397 observations[0m; each percentile contains 633.97 observations
+sockperf: ---> <MAX> observation =  199.340
+sockperf: ---> percentile 99.999 =  113.465
+sockperf: ---> percentile 99.990 =   83.880
+sockperf: ---> percentile 99.900 =   27.970
+sockperf: ---> percentile 99.000 =    9.725
+sockperf: ---> percentile 90.000 =    8.010
+sockperf: ---> percentile 75.000 =    7.875
+sockperf: ---> percentile 50.000 =    7.730
+sockperf: ---> percentile 25.000 =    7.615
+sockperf: ---> <MIN> observation =    6.175
+
+#####
+openEuler 24.03 - Run 5
+2024-11-22 09:26:47
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:sockperf: using recvfrom() to block on socket(s)
+
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: [Total Run] RunTime=1.000 sec; Warm up time=400 msec; SentMessages=62625; ReceivedMessages=62624
+sockperf: ========= Printing statistics for Server No: 0
+sockperf: [Valid Duration] RunTime=1.000 sec; SentMessages=62624; ReceivedMessages=62624
+sockperf: [2;35m====> avg-latency=7.941 (std-dev=1.820)[0m
+sockperf: # dropped messages = 0; # duplicated messages = 0; # out-of-order messages = 0
+sockperf: Summary: Latency is 7.941 usec
+sockperf: [2;35mTotal 62624 observations[0m; each percentile contains 626.24 observations
+sockperf: ---> <MAX> observation =  232.365
+sockperf: ---> percentile 99.999 =  124.235
+sockperf: ---> percentile 99.990 =   70.360
+sockperf: ---> percentile 99.900 =   27.845
+sockperf: ---> percentile 99.000 =   10.030
+sockperf: ---> percentile 90.000 =    8.090
+sockperf: ---> percentile 75.000 =    7.955
+sockperf: ---> percentile 50.000 =    7.815
+sockperf: ---> percentile 25.000 =    7.710
+sockperf: ---> <MIN> observation =    5.865
+

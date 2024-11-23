@@ -1,0 +1,85 @@
+#####
+openEuler 24.03 - Run 1
+2024-11-22 09:24:52
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: Total of 301079 messages sent in 1.000 sec
+
+sockperf: [2;35mNOTE: test was performed, using msg-size=14. For getting maximum throughput consider using --msg-size=1472[0m
+sockperf: Summary: Message Rate is 300937 [msg/sec]
+sockperf: Summary: BandWidth is 4.018 MBps (32.144 Mbps)
+
+#####
+openEuler 24.03 - Run 2
+2024-11-22 09:25:04
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: Total of 302445 messages sent in 1.000 sec
+
+sockperf: [2;35mNOTE: test was performed, using msg-size=14. For getting maximum throughput consider using --msg-size=1472[0m
+sockperf: Summary: Message Rate is 302301 [msg/sec]
+sockperf: Summary: BandWidth is 4.036 MBps (32.289 Mbps)
+
+#####
+openEuler 24.03 - Run 3
+2024-11-22 09:25:16
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: Total of 306458 messages sent in 1.000 sec
+
+sockperf: [2;35mNOTE: test was performed, using msg-size=14. For getting maximum throughput consider using --msg-size=1472[0m
+sockperf: Summary: Message Rate is 306312 [msg/sec]
+sockperf: Summary: BandWidth is 4.090 MBps (32.718 Mbps)
+
+#####
+openEuler 24.03 - Run 4
+2024-11-22 09:25:29
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: Total of 304073 messages sent in 1.000 sec
+
+sockperf: [2;35mNOTE: test was performed, using msg-size=14. For getting maximum throughput consider using --msg-size=1472[0m
+sockperf: Summary: Message Rate is 303930 [msg/sec]
+sockperf: Summary: BandWidth is 4.058 MBps (32.463 Mbps)
+
+#####
+openEuler 24.03 - Run 5
+2024-11-22 09:25:39
+#####
+sockperf: [2;35m== version #3.7-no.git == [0m
+sockperf[CLIENT] send on:
+[ 0] IP = 0.0.0.0         PORT = 11111 # UDP
+sockperf: Warmup stage (sending a few dummy messages)...
+sockperf: Starting test...
+sockperf: Test end (interrupted by timer)
+sockperf: Test ended
+sockperf: Total of 299626 messages sent in 1.000 sec
+
+sockperf: [2;35mNOTE: test was performed, using msg-size=14. For getting maximum throughput consider using --msg-size=1472[0m
+sockperf: Summary: Message Rate is 299483 [msg/sec]
+sockperf: Summary: BandWidth is 3.999 MBps (31.988 Mbps)
+

@@ -1,0 +1,8 @@
+Using built-in specs.
+COLLECT_GCC=./cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-openEuler-linux/12/lto-wrapper
+Target: aarch64-openEuler-linux
+Configured with: ../configure --disable-bootstrap --disable-libgcj --without-cloog --enable-languages=c,c++,fortran,objc,obj-c++,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl= --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --without-isl --enable-gnu-indirect-function --with-multilib-list=lp64 --enable-bolt --build=aarch64-openEuler-linux
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.3.1 (openEuler 12.3.1-36.oe2403) (GCC) 

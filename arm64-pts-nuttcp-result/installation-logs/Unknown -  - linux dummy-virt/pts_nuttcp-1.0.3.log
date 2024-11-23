@@ -1,0 +1,1 @@
+gcc -Wall -O3  -o nuttcp-8.1.4 nuttcp-8.1.4.c 

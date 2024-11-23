@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>arm64-pts-sysbench-result</Title>
+    <LastModified>2024-11-22 04:02:21</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>qemu testing on openEuler 24.03 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Unknown -  - linux dummy-virt</Identifier>
+    <Hardware>Processor: Unknown (2 Cores), Motherboard: linux dummy-virt, Memory: 4096MB, Disk: 38GB</Hardware>
+    <Software>OS: openEuler 24.03, Kernel: 6.6.0 (aarch64), Compiler: GCC 12.3.1, File-System: ext4, System Layer: qemu</Software>
+    <User></User>
+    <TimeStamp>2024-11-22 03:48:45</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-openEuler-linux --disable-bootstrap --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bolt --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-backtrace --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-gcc-major-version-only --with-linker-hash-style=gnu --with-multilib-list=lp64 --without-cloog --without-isl","kernel-extra-details":"Transparent Huge Pages: always","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Not affected + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>memory run</Arguments>
+    <Description>Test: RAM / Memory</Description>
+    <Scale>MiB/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>3450.44</Value>
+        <RawString>2821.36:4967.78:2871.21:2915.04:2865.2:2829.73:4296.77:2983.68:3164.23:5562.02:2875.15:2909.94:3540.72:3533.08:3620.72</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -laio -lm"},"test-run-times":"36.30:20.64:35.69:35.14:35.74:36.19:23.84:34.33:32.37:18.42:35.63:35.20:28.93:28.99:28.29"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.1.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>1.0.20</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>5972.71</Value>
+        <RawString>5972.85:5972.93:5972.36</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -funroll-loops -rdynamic -ldl -laio -lm"},"test-run-times":"90.01:90.01:90.01"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

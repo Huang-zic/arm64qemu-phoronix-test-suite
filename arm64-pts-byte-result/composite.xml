@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>arm64-pts-byte-result</Title>
+    <LastModified>2024-11-22 08:54:44</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>qemu testing on openEuler 24.03 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Unknown -  - linux dummy-virt</Identifier>
+    <Hardware>Processor: Unknown (2 Cores), Motherboard: linux dummy-virt, Memory: 4096MB, Disk: 38GB</Hardware>
+    <Software>OS: openEuler 24.03, Kernel: 6.6.0 (aarch64), Compiler: GCC 12.3.1, File-System: ext4, System Layer: qemu</Software>
+    <User></User>
+    <TimeStamp>2024-11-22 07:58:46</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-openEuler-linux --disable-bootstrap --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bolt --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-backtrace --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-gcc-major-version-only --with-linker-hash-style=gnu --with-multilib-list=lp64 --without-cloog --without-isl","kernel-extra-details":"Transparent Huge Pages: always","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Not affected + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/byte-1.3.0</Identifier>
+    <Title>BYTE Unix Benchmark</Title>
+    <AppVersion>5.1.3-git</AppVersion>
+    <Arguments>pipe</Arguments>
+    <Description>Computational Test: Pipe</Description>
+    <Scale>LPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>2371511.1</Value>
+        <RawString>2369855.8:2366388.2:2378289.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pedantic -O3 -ffast-math -march=native -mtune=native -lm"},"test-run-times":"260.51:260.42:260.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/byte-1.3.0</Identifier>
+    <Title>BYTE Unix Benchmark</Title>
+    <AppVersion>5.1.3-git</AppVersion>
+    <Arguments>dhry2reg</Arguments>
+    <Description>Computational Test: Dhrystone 2</Description>
+    <Scale>LPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>84285012.5</Value>
+        <RawString>84368618.2:84285590.8:84200828.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pedantic -O3 -ffast-math -march=native -mtune=native -lm"},"test-run-times":"260.42:260.41:260.42"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/byte-1.3.0</Identifier>
+    <Title>BYTE Unix Benchmark</Title>
+    <AppVersion>5.1.3-git</AppVersion>
+    <Arguments>syscall</Arguments>
+    <Description>Computational Test: System Call</Description>
+    <Scale>LPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>1714869.7</Value>
+        <RawString>1711164.2:1714995.4:1718449.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pedantic -O3 -ffast-math -march=native -mtune=native -lm"},"test-run-times":"260.44:260.42:260.41"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/byte-1.3.0</Identifier>
+    <Title>BYTE Unix Benchmark</Title>
+    <AppVersion>5.1.3-git</AppVersion>
+    <Arguments>whetstone-double</Arguments>
+    <Description>Computational Test: Whetstone Double</Description>
+    <Scale>MWIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>9039.8</Value>
+        <RawString>9042.1:9038.9:9038.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pedantic -O3 -ffast-math -march=native -mtune=native -lm"},"test-run-times":"314.83:314.49:314.49"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

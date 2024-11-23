@@ -1,0 +1,73 @@
+Archive:  byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703.zip
+a07fcc03264915c624f0e4818993c5b4df3fa703
+   creating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/.gitignore  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/LICENSE.txt  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/README.md  
+   creating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/.cproject  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/.project  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/Makefile  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/README  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/Run  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/USAGE  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/WRITING_TESTS  
+   creating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/pgms/
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/pgms/gfx-x11  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/pgms/index.base  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/pgms/multi.sh  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/pgms/tst.sh  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/pgms/unixbench.logo  
+   creating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/arith.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/big.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/context1.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/dhry.h  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/dhry_1.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/dhry_2.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/dummy.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/execl.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/fstime.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/hanoi.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/looper.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/pipe.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/spawn.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/syscall.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/time-polling.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/timeit.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/ubgears.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/src/whets.c  
+   creating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/testdir/
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/testdir/cctest.c  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/testdir/dc.dat  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/testdir/large.txt  
+  inflating: byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench/testdir/sort.src  
+rm -f ./pgms/arithoh ./pgms/register ./pgms/short ./pgms/int ./pgms/long ./pgms/float ./pgms/double ./pgms/hanoi ./pgms/syscall ./pgms/context1 ./pgms/pipe ./pgms/spawn ./pgms/execl ./pgms/dhry2 ./pgms/dhry2reg  ./pgms/looper ./pgms/fstime ./pgms/whetstone-double  core *~ */*~
+make distr
+make[1]: Entering directory '/var/lib/phoronix-test-suite/installed-tests/pts/byte-1.3.0/byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+make[1]: Leaving directory '/var/lib/phoronix-test-suite/installed-tests/pts/byte-1.3.0/byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench'
+make programs
+make[1]: Entering directory '/var/lib/phoronix-test-suite/installed-tests/pts/byte-1.3.0/byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench'
+gcc -o pgms/arithoh -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Darithoh src/arith.c 
+gcc -o pgms/register -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum='register int' src/arith.c 
+gcc -o pgms/short -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=short src/arith.c 
+gcc -o pgms/int -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=int src/arith.c 
+gcc -o pgms/long -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=long src/arith.c 
+gcc -o pgms/float -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=float src/arith.c 
+gcc -o pgms/double -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=double src/arith.c 
+gcc -o pgms/hanoi -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/hanoi.c 
+gcc -o pgms/syscall -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/syscall.c 
+gcc -o pgms/context1 -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/context1.c 
+gcc -o pgms/pipe -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/pipe.c 
+gcc -o pgms/spawn -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/spawn.c 
+gcc -o pgms/execl -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/execl.c 
+gcc -o pgms/dhry2 -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DHZ= ./src/dhry_1.c ./src/dhry_2.c
+gcc -o pgms/dhry2reg -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DHZ= -DREG=register ./src/dhry_1.c ./src/dhry_2.c
+gcc -o pgms/looper -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/looper.c 
+gcc -o pgms/fstime -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/fstime.c 
+gcc -o pgms/whetstone-double -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DDP -DGTODay -DUNIXBENCH src/whets.c -lm
+make[1]: Leaving directory '/var/lib/phoronix-test-suite/installed-tests/pts/byte-1.3.0/byte-unixbench-a07fcc03264915c624f0e4818993c5b4df3fa703/UnixBench'

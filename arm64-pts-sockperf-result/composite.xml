@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>arm64-pts-sockperf-result</Title>
+    <LastModified>2024-11-22 09:26:48</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>qemu testing on openEuler 24.03 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>openEuler 24.03</Identifier>
+    <Hardware>Processor: Unknown (2 Cores), Motherboard: linux dummy-virt, Memory: 4096MB, Disk: 38GB</Hardware>
+    <Software>OS: openEuler 24.03, Kernel: 6.6.0 (aarch64), Compiler: GCC 12.3.1, File-System: ext4, System Layer: qemu</Software>
+    <User></User>
+    <TimeStamp>2024-11-22 09:24:37</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-openEuler-linux --disable-bootstrap --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bolt --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-backtrace --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-gcc-major-version-only --with-linker-hash-style=gnu --with-multilib-list=lp64 --without-cloog --without-isl","kernel-extra-details":"Transparent Huge Pages: always","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Not affected + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/sockperf-1.1.0</Identifier>
+    <Title>Sockperf</Title>
+    <AppVersion>3.7</AppVersion>
+    <Arguments>throughput</Arguments>
+    <Description>Test: Throughput</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>openEuler 24.03</Identifier>
+        <Value>302593</Value>
+        <RawString>300937:302301:306312:303930:299483</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"--param -O3 -rdynamic"},"test-run-times":"8.55:8.21:8.21:8.21:8.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sockperf-1.1.0</Identifier>
+    <Title>Sockperf</Title>
+    <AppVersion>3.7</AppVersion>
+    <Arguments>ping-pong</Arguments>
+    <Description>Test: Latency Ping Pong</Description>
+    <Scale>usec</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>openEuler 24.03</Identifier>
+        <Value>7.860</Value>
+        <RawString>7.833:7.871:7.808:7.849:7.941</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"--param -O3 -rdynamic"},"test-run-times":"8.23:8.22:8.23:8.23:8.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

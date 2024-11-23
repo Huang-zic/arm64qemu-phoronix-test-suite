@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>arm64-pts-nuttcp-result</Title>
+    <LastModified>2024-11-22 09:07:04</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>qemu testing on openEuler 24.03 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>Unknown -  - linux dummy-virt</Identifier>
+    <Hardware>Processor: Unknown (2 Cores), Motherboard: linux dummy-virt, Memory: 4096MB, Disk: 38GB</Hardware>
+    <Software>OS: openEuler 24.03, Kernel: 6.6.0 (aarch64), Compiler: GCC 12.3.1, File-System: ext4, System Layer: qemu</Software>
+    <User></User>
+    <TimeStamp>2024-11-22 08:56:01</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-openEuler-linux --disable-bootstrap --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bolt --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-backtrace --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-gcc-major-version-only --with-linker-hash-style=gnu --with-multilib-list=lp64 --without-cloog --without-isl","kernel-extra-details":"Transparent Huge Pages: always","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Not affected + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/nuttcp-1.0.3</Identifier>
+    <Title>Nuttcp</Title>
+    <AppVersion>8.1.4</AppVersion>
+    <Arguments>-l8972 -u -w4m -Ru localhost</Arguments>
+    <Description>Test: 10G+ UDP - Server Address: localhost</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.03:0.03:0.03","error":"The test run did not produce a result. The test run did not produce a result. The test run did not produce a result. E: connect failed: Connection refused"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nuttcp-1.0.3</Identifier>
+    <Title>Nuttcp</Title>
+    <AppVersion>8.1.4</AppVersion>
+    <Arguments>localhost</Arguments>
+    <Description>Test: TCP Transfer - Default - Server Address: localhost</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.05:0.05:0.06","error":"The test run did not produce a result. The test run did not produce a result. The test run did not produce a result. E: nuttcp-t: v8.1.4: Error: connect: Connection refused"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nuttcp-1.0.3</Identifier>
+    <Title>Nuttcp</Title>
+    <AppVersion>8.1.4</AppVersion>
+    <Arguments>-l8972 -u -w4m -Ru 127.0.0.1</Arguments>
+    <Description>Test: 10G+ UDP - Server Address: 127.0.0.1</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.37:0.03:0.03","error":"The test run did not produce a result. The test run did not produce a result. The test run did not produce a result. E: connect failed: Connection refused"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nuttcp-1.0.3</Identifier>
+    <Title>Nuttcp</Title>
+    <AppVersion>8.1.4</AppVersion>
+    <Arguments>127.0.0.1</Arguments>
+    <Description>Test: TCP Transfer - Default - Server Address: 127.0.0.1</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"0.05:0.05:0.05","error":"The test run did not produce a result. The test run did not produce a result. The test run did not produce a result. E: nuttcp-t: v8.1.4: Error: connect: Connection refused"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nuttcp-1.0.3</Identifier>
+    <Title>Nuttcp</Title>
+    <AppVersion>8.1.4</AppVersion>
+    <Arguments>-l8972 -u -w4m -Ru www.baidu.com</Arguments>
+    <Description>Test: 10G+ UDP - Server Address: www.baidu.com</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value></Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"134.40:135.26:135.26","error":"The test run did not produce a result. The test run did not produce a result. The test run did not produce a result."}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

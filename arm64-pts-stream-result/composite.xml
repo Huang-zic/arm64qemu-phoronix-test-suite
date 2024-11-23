@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>arm64-pts_stream-result</Title>
+    <LastModified>2024-11-22 01:53:24</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>qemu testing on openEuler 24.03 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Unknown -  - linux dummy-virt</Identifier>
+    <Hardware>Processor: Unknown (2 Cores), Motherboard: linux dummy-virt, Memory: 4096MB, Disk: 38GB</Hardware>
+    <Software>OS: openEuler 24.03, Kernel: 6.6.0 (aarch64), Compiler: GCC 12.3.1, File-System: ext4, System Layer: qemu</Software>
+    <User></User>
+    <TimeStamp>2024-11-22 01:49:13</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-openEuler-linux --disable-bootstrap --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bolt --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-backtrace --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-gcc-major-version-only --with-linker-hash-style=gnu --with-multilib-list=lp64 --without-cloog --without-isl","kernel-extra-details":"Transparent Huge Pages: always","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Not affected + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Copy</Arguments>
+    <Description>Type: Copy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>16310.0</Value>
+        <RawString>16599.2:16264.6:16243.7:16230.6:16211.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"},"test-run-times":"45.01:43.95:43.98:43.94:43.99"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Scale</Arguments>
+    <Description>Type: Scale</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>19709.9</Value>
+        <RawString>19803.5:19688.2:19649.8:19691.9:19716.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Triad</Arguments>
+    <Description>Type: Triad</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>19477.7</Value>
+        <RawString>19548.9:19451.5:19476.7:19436.6:19474.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.4</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Add</Arguments>
+    <Description>Type: Add</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>19558.6</Value>
+        <RawString>19632.7:19566.4:19502.2:19586.1:19505.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

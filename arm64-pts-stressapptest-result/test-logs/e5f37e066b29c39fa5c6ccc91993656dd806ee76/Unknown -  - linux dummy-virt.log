@@ -1,0 +1,30 @@
+#####
+Unknown -  - linux dummy-virt - Run 1
+2024-11-22 07:56:49
+#####
+2024/11/22-07:55:49(UTC) Log: Commandline - ./src/stressapptest -m 2 -M 64 -s 60 -l /var/lib/phoronix-test-suite/installed-tests/pts/stressapptest-1.0.1/stressapptest-1.0.1-1732262147-1.log
+2024/11/22-07:55:49(UTC) Stats: SAT revision 1.0.9_autoconf, 64 bit binary
+2024/11/22-07:55:49(UTC) Log: root @ localhost on Fri Nov 22 07:54:00 UTC 2024 from open source release
+2024/11/22-07:55:49(UTC) Log: 1 nodes, 2 cpus.
+2024/11/22-07:55:49(UTC) Log: Prefer plain malloc memory allocation.
+2024/11/22-07:55:49(UTC) Log: Using mmap() allocation at 0xffff8e900000.
+2024/11/22-07:55:49(UTC) Stats: Starting SAT, 64M, 60 seconds
+2024/11/22-07:55:49(UTC) Log: region number 9 exceeds region count 1
+2024/11/22-07:55:49(UTC) Log: Region mask: 0x1
+2024/11/22-07:55:59(UTC) Log: Seconds remaining: 50
+2024/11/22-07:56:09(UTC) Log: Seconds remaining: 40
+2024/11/22-07:56:19(UTC) Log: Seconds remaining: 30
+2024/11/22-07:56:29(UTC) Log: Seconds remaining: 20
+2024/11/22-07:56:39(UTC) Log: Seconds remaining: 10
+2024/11/22-07:56:49(UTC) Stats: Found 0 hardware incidents
+2024/11/22-07:56:49(UTC) Stats: Completed: 801890.00M in 60.01s 13363.39MB/s, with 0 hardware incidents, 0 errors
+2024/11/22-07:56:49(UTC) Stats: Memory Copy: 801890.00M at 13364.12MB/s
+2024/11/22-07:56:49(UTC) Stats: File Copy: 0.00M at 0.00MB/s
+2024/11/22-07:56:49(UTC) Stats: Net Copy: 0.00M at 0.00MB/s
+2024/11/22-07:56:49(UTC) Stats: Data Check: 0.00M at 0.00MB/s
+2024/11/22-07:56:49(UTC) Stats: Invert Data: 0.00M at 0.00MB/s
+2024/11/22-07:56:49(UTC) Stats: Disk: 0.00M at 0.00MB/s
+2024/11/22-07:56:49(UTC) 
+2024/11/22-07:56:49(UTC) Status: PASS - please verify no corrected errors
+2024/11/22-07:56:49(UTC) 
+

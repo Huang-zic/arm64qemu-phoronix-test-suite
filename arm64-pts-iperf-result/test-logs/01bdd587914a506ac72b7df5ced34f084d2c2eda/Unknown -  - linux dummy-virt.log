@@ -1,0 +1,162 @@
+#####
+Unknown -  - linux dummy-virt - Run 1
+2024-11-22 03:21:56
+#####
+iperf 3.14
+Linux localhost 6.6.0 #1 SMP PREEMPT Fri Nov 15 16:04:41 CST 2024 aarch64
+Control connection MSS 16640
+Setting UDP block size to 16640
+Time: Fri, 22 Nov 2024 03:21:24 GMT
+Connecting to host localhost, port 5201
+      Cookie: ezyidyg3jjeweuwf7xieiq3k4fmxfetbd6zu
+      Target Bitrate: 1048576
+[  9] local 127.0.0.1 port 34949 connected to 127.0.0.1 port 5201
+Starting Test: protocol: UDP, 1 streams, 16640 byte blocks, omitting 0 seconds, 30 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  9]   0.00-1.01   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   1.01-2.00   sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]   2.00-3.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   3.00-4.00   sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]   4.00-5.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   5.00-6.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   6.00-7.01   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   7.01-8.02   sec   114 KBytes  0.92 Mbits/sec  7  
+[  9]   8.02-9.00   sec   130 KBytes  1.09 Mbits/sec  8  
+[  9]   9.00-10.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  10.00-11.02  sec   130 KBytes  1.04 Mbits/sec  8  
+[  9]  11.02-12.00  sec   130 KBytes  1.09 Mbits/sec  8  
+[  9]  12.00-13.02  sec   130 KBytes  1.05 Mbits/sec  8  
+[  9]  13.02-14.02  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  14.02-15.00  sec   130 KBytes  1.08 Mbits/sec  8  
+[  9]  15.00-16.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  16.00-17.01  sec   114 KBytes  0.93 Mbits/sec  7  
+[  9]  17.01-18.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  18.00-19.06  sec   130 KBytes  1.01 Mbits/sec  8  
+[  9]  19.06-20.04  sec   130 KBytes  1.09 Mbits/sec  8  
+[  9]  20.04-21.00  sec   130 KBytes  1.10 Mbits/sec  8  
+[  9]  21.00-22.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  22.00-23.06  sec   130 KBytes  1.01 Mbits/sec  8  
+[  9]  23.06-24.00  sec   114 KBytes  0.99 Mbits/sec  7  
+[  9]  24.00-25.01  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  25.01-26.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  26.00-27.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  27.00-28.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  28.00-29.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  29.00-30.00  sec   130 KBytes  1.07 Mbits/sec  8  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  9]   0.00-30.00  sec  3.76 MBytes  1.05 Mbits/sec  0.000 ms  0/237 (0%)  sender
+[  9]   0.00-30.00  sec  3.76 MBytes  1.05 Mbits/sec  0.333 ms  0/237 (0%)  receiver
+CPU Utilization: local/sender 0.8% (0.2%u/0.6%s), remote/receiver 0.0% (0.0%u/0.0%s)
+
+iperf Done.
+
+#####
+Unknown -  - linux dummy-virt - Run 2
+2024-11-22 03:22:33
+#####
+iperf 3.14
+Linux localhost 6.6.0 #1 SMP PREEMPT Fri Nov 15 16:04:41 CST 2024 aarch64
+Control connection MSS 16640
+Setting UDP block size to 16640
+Time: Fri, 22 Nov 2024 03:22:01 GMT
+Connecting to host localhost, port 5201
+      Cookie: 75h4x4cxgthpt6nh5yhyllxh4mldmc6kgkw7
+      Target Bitrate: 1048576
+[  9] local 127.0.0.1 port 38931 connected to 127.0.0.1 port 5201
+Starting Test: protocol: UDP, 1 streams, 16640 byte blocks, omitting 0 seconds, 30 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  9]   0.00-1.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   1.00-2.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   2.00-3.01   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   3.01-4.00   sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]   4.00-5.00   sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]   5.00-6.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   6.00-7.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   7.00-8.00   sec   114 KBytes  0.93 Mbits/sec  7  
+[  9]   8.00-9.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   9.00-10.01  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  10.01-11.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  11.00-12.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  12.00-13.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  13.00-14.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  14.00-15.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  15.00-16.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  16.00-17.00  sec   114 KBytes  0.93 Mbits/sec  7  
+[  9]  17.00-18.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  18.00-19.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  19.00-20.01  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  20.01-21.01  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  21.01-22.01  sec   114 KBytes  0.94 Mbits/sec  7  
+[  9]  22.01-23.00  sec   146 KBytes  1.20 Mbits/sec  9  
+[  9]  23.00-24.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  24.00-25.00  sec   114 KBytes  0.93 Mbits/sec  7  
+[  9]  25.00-26.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  26.00-27.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  27.00-28.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  28.00-29.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  29.00-30.00  sec   130 KBytes  1.07 Mbits/sec  8  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  9]   0.00-30.00  sec  3.76 MBytes  1.05 Mbits/sec  0.000 ms  0/237 (0%)  sender
+[  9]   0.00-30.00  sec  3.76 MBytes  1.05 Mbits/sec  0.377 ms  0/237 (0%)  receiver
+CPU Utilization: local/sender 0.8% (0.2%u/0.6%s), remote/receiver 0.0% (0.0%u/0.0%s)
+
+iperf Done.
+
+#####
+Unknown -  - linux dummy-virt - Run 3
+2024-11-22 03:23:08
+#####
+iperf 3.14
+Linux localhost 6.6.0 #1 SMP PREEMPT Fri Nov 15 16:04:41 CST 2024 aarch64
+Control connection MSS 16640
+Setting UDP block size to 16640
+Time: Fri, 22 Nov 2024 03:22:38 GMT
+Connecting to host localhost, port 5201
+      Cookie: qx6yo5d66j6qo35zo43rk777akejhfyzcbni
+      Target Bitrate: 1048576
+[  9] local 127.0.0.1 port 47516 connected to 127.0.0.1 port 5201
+Starting Test: protocol: UDP, 1 streams, 16640 byte blocks, omitting 0 seconds, 30 second test, tos 0
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  9]   0.00-1.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   1.00-2.00   sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]   2.00-3.01   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   3.01-4.00   sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]   4.00-5.01   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   5.01-6.01   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   6.01-7.00   sec   130 KBytes  1.08 Mbits/sec  8  
+[  9]   7.00-8.00   sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]   8.00-9.00   sec   114 KBytes  0.93 Mbits/sec  7  
+[  9]   9.00-10.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  10.00-11.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  11.00-12.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  12.00-13.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  13.00-14.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  14.00-15.00  sec   114 KBytes  0.93 Mbits/sec  7  
+[  9]  15.00-16.04  sec   130 KBytes  1.02 Mbits/sec  8  
+[  9]  16.04-17.00  sec   130 KBytes  1.10 Mbits/sec  8  
+[  9]  17.00-18.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  18.00-19.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  19.00-20.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  20.00-21.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  21.00-22.04  sec   130 KBytes  1.02 Mbits/sec  8  
+[  9]  22.04-23.00  sec   130 KBytes  1.11 Mbits/sec  8  
+[  9]  23.00-24.01  sec   114 KBytes  0.92 Mbits/sec  7  
+[  9]  24.01-25.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  25.00-26.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  26.00-27.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  27.00-28.00  sec   130 KBytes  1.06 Mbits/sec  8  
+[  9]  28.00-29.00  sec   130 KBytes  1.07 Mbits/sec  8  
+[  9]  29.00-30.00  sec   130 KBytes  1.06 Mbits/sec  8  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  9]   0.00-30.00  sec  3.76 MBytes  1.05 Mbits/sec  0.000 ms  0/237 (0%)  sender
+[  9]   0.00-30.01  sec  3.76 MBytes  1.05 Mbits/sec  0.085 ms  0/237 (0%)  receiver
+CPU Utilization: local/sender 0.9% (0.2%u/0.7%s), remote/receiver 0.0% (0.0%u/0.0%s)
+
+iperf Done.
+

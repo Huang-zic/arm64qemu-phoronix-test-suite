@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>arm64-pts-iperf-result</Title>
+    <LastModified>2024-11-22 03:32:44</LastModified>
+    <TestClient>Phoronix Test Suite v10.8.4</TestClient>
+    <Description>qemu testing on openEuler 24.03 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Unknown -  - linux dummy-virt</Identifier>
+    <Hardware>Processor: Unknown (2 Cores), Motherboard: linux dummy-virt, Memory: 4096MB, Disk: 38GB</Hardware>
+    <Software>OS: openEuler 24.03, Kernel: 6.6.0 (aarch64), Compiler: GCC 12.3.1, File-System: ext4, System Layer: qemu</Software>
+    <User></User>
+    <TimeStamp>2024-11-22 03:13:45</TimeStamp>
+    <TestClientVersion>10.8.4</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-openEuler-linux --disable-bootstrap --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bolt --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-backtrace --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-gcc-major-version-only --with-linker-hash-style=gnu --with-multilib-list=lp64 --without-cloog --without-isl","kernel-extra-details":"Transparent Huge Pages: always","security":"gather_data_sampling: Not affected + itlb_multihit: Not affected + l1tf: Not affected + mds: Not affected + meltdown: Not affected + mmio_stale_data: Not affected + retbleed: Not affected + spec_rstack_overflow: Not affected + spec_store_bypass: Not affected + spectre_v1: Mitigation of __user pointer sanitization + spectre_v2: Not affected + srbds: Not affected + tsx_async_abort: Not affected"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/iperf-1.2.0</Identifier>
+    <Title>iPerf</Title>
+    <AppVersion>3.14</AppVersion>
+    <Arguments>-c localhost -p 5201 -t 30  -P 1</Arguments>
+    <Description>Server Address: localhost - Server Port: 5201 - Duration: 30 Seconds - Test: TCP - Parallel: 1</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>37386</Value>
+        <RawString>56407:51482:58131:55415:56884:40498:21707:21340:21163:23944:20463:21199</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -lm"},"test-run-times":"33.35:33.01:33.01:33.01:33.01:33.01:33.03:33.02:33.02:33.04:33.04:33.04"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iperf-1.2.0</Identifier>
+    <Title>iPerf</Title>
+    <AppVersion>3.14</AppVersion>
+    <Arguments>-c localhost -p 5201 -t 30 -u -P 1</Arguments>
+    <Description>Server Address: localhost - Server Port: 5201 - Duration: 30 Seconds - Test: UDP - Parallel: 1</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>1.05</Value>
+        <RawString>1.05:1.05:1.05</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -lm"},"test-run-times":"33.08:33.02:33.03"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iperf-1.2.0</Identifier>
+    <Title>iPerf</Title>
+    <AppVersion>3.14</AppVersion>
+    <Arguments>-c localhost -p 5201 -t 30  -P 64</Arguments>
+    <Description>Server Address: localhost - Server Port: 5201 - Duration: 30 Seconds - Test: TCP - Parallel: 64</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>13955</Value>
+        <RawString>12686:11731:12367:11959:12470:11801:11519:20215:12025:11498:13441:25742</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -lm"},"test-run-times":"33.32:33.35:33.28:33.49:33.25:33.28:33.32:33.14:33.27:33.28:33.34:33.18"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iperf-1.2.0</Identifier>
+    <Title>iPerf</Title>
+    <AppVersion>3.14</AppVersion>
+    <Arguments>-c localhost -p 5201 -t 30 -u -P 64</Arguments>
+    <Description>Server Address: localhost - Server Port: 5201 - Duration: 30 Seconds - Test: UDP - Parallel: 64</Description>
+    <Scale>Mbits/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Unknown -  - linux dummy-virt</Identifier>
+        <Value>67.3</Value>
+        <RawString>67.3:67.2:67.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -lm"},"test-run-times":"33.18:34.03:33.21"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

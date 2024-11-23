@@ -1,0 +1,348 @@
+Booting Linux on physical CPU 0x0000000000 [0x481fd010]
+Linux version 6.6.0 (root@localhost.localdomain) (gcc (GCC) 12.3.1 (openEuler 12.3.1-36.oe2403), GNU ld (GNU Binutils) 2.41) #1 SMP PREEMPT Fri Nov 15 16:04:41 CST 2024
+KASLR enabled
+random: crng init done
+Machine model: linux,dummy-virt
+efi: UEFI not found.
+NUMA: No NUMA configuration found
+NUMA: Faking a node at [mem 0x0000000040000000-0x000000013fffffff]
+NUMA: NODE_DATA [mem 0x13f7ed9c0-0x13f7effff]
+Zone ranges:
+  DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+  DMA32    empty
+  Normal   [mem 0x0000000100000000-0x000000013fffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000040000000-0x000000013fffffff]
+Initmem setup node 0 [mem 0x0000000040000000-0x000000013fffffff]
+cma: Reserved 32 MiB at 0x00000000fe000000 on node -1
+psci: probing for conduit method from DT.
+psci: PSCIv1.1 detected in firmware.
+psci: Using standard PSCI v0.2 function IDs
+psci: Trusted OS migration not required
+psci: SMC Calling Convention v1.1
+smccc: KVM: hypervisor services detected (0x00000000 0x00000000 0x00000000 0x00000003)
+percpu: Embedded 22 pages/cpu s50728 r8192 d31192 u90112
+pcpu-alloc: s50728 r8192 d31192 u90112 alloc=22*4096
+pcpu-alloc: [0] 0 [0] 1 
+Detected VIPT I-cache on CPU0
+CPU features: detected: GIC system register CPU interface
+CPU features: detected: Hardware dirty bit management
+CPU features: kernel page table isolation forced ON by KASLR
+CPU features: detected: Kernel page table isolation (KPTI)
+alternatives: applying boot alternatives
+Kernel command line: root=/dev/vda2 init=/sbin/init
+Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Fallback order for Node 0: 0 
+Built 1 zonelists, mobility grouping on.  Total pages: 1032192
+Policy zone: Normal
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+software IO TLB: area num 2.
+software IO TLB: mapped [mem 0x00000000fa000000-0x00000000fe000000] (64MB)
+Memory: 3972680K/4194304K available (16640K kernel code, 4264K rwdata, 10556K rodata, 9152K init, 605K bss, 188856K reserved, 32768K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+rcu: Preemptible hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=2.
+	Trampoline variant of Tasks RCU enabled.
+	Tracing variant of Tasks RCU enabled.
+rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+GICv3: 256 SPIs implemented
+GICv3: 0 Extended SPIs implemented
+Root IRQ handler: gic_handle_irq
+GICv3: GICv3 features: 16 PPIs, DirectLPI
+GICv3: CPU0: found redistributor 0 region 0:0x00000000080a0000
+ITS [mem 0x08080000-0x0809ffff]
+ITS@0x0000000008080000: allocated 8192 Devices @100040000 (indirect, esz 8, psz 64K, shr 1)
+ITS@0x0000000008080000: allocated 8192 Interrupt Collections @100050000 (flat, esz 8, psz 64K, shr 1)
+GICv3: using LPI property table @0x0000000100060000
+GICv3: CPU0: using allocated LPI pending table @0x0000000100070000
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+arch_timer: cp15 timer(s) running at 100.00MHz (virt).
+clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns
+sched_clock: 57 bits at 100MHz, resolution 10ns, wraps every 4398046511100ns
+arm-pv: using stolen time PV
+Console: colour dummy device 80x25
+printk: console [tty0] enabled
+Calibrating delay loop (skipped), value calculated using timer frequency.. 200.00 BogoMIPS (lpj=400000)
+pid_max: default: 32768 minimum: 301
+LSM: initializing lsm=capability,integrity
+Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+Platform MSI: its@8080000 domain created
+PCI/MSI: /intc@8000000/its@8080000 domain created
+fsl-mc MSI: its@8080000 domain created
+EFI services will not be available.
+smp: Bringing up secondary CPUs ...
+Detected VIPT I-cache on CPU1
+GICv3: CPU1: found redistributor 1 region 0:0x00000000080c0000
+GICv3: CPU1: using allocated LPI pending table @0x0000000100080000
+CPU1: Booted secondary processor 0x0000000001 [0x481fd010]
+smp: Brought up 1 node, 2 CPUs
+SMP: Total of 2 processors activated.
+CPU features: detected: Common not Private translations
+CPU features: detected: CRC32 instructions
+CPU features: detected: LSE atomic instructions
+CPU features: detected: Privileged Access Never
+CPU features: detected: RAS Extension Support
+CPU: All CPU(s) started at EL1
+alternatives: applying system-wide alternatives
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+pinctrl core: initialized pinctrl subsystem
+DMI not present or invalid.
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+audit: initializing netlink subsys (disabled)
+audit: type=2000 audit(0.004:1): state=initialized audit_enabled=0 res=1
+thermal_sys: Registered thermal governor 'step_wise'
+thermal_sys: Registered thermal governor 'power_allocator'
+cpuidle: using governor menu
+hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+ASID allocator initialised with 32768 entries
+9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 13, base_baud = 0) is a PL011 rev1
+printk: console [ttyAMA0] enabled
+Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+Modules: 0 pages in range for non-PLT usage
+Modules: 513936 pages in range for PLT usage
+HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+ACPI: Interpreter disabled.
+iommu: Default domain type: Translated
+iommu: DMA domain TLB invalidation policy: strict mode
+SCSI subsystem initialized
+libata version 3.00 loaded.
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti 
+PTP clock support registered
+EDAC MC: Ver: 3.0.0
+scmi_core: SCMI protocol bus registered
+FPGA manager framework
+Advanced Linux Sound Architecture Driver Initialized.
+vgaarb: loaded
+clocksource: Switched to clocksource arch_sys_counter
+VFS: Disk quotas dquot_6.6.0
+VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+pnp: PnP ACPI: disabled
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+TCP: Hash tables configured (established 32768 bind 32768)
+UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp-with-tls transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 64
+kvm [1]: HYP mode not available
+Initialise system trusted keyrings
+workingset: timestamp_bits=42 max_order=20 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+9p: Installing v9fs 9p2000 file system support
+Key type asymmetric registered
+Asymmetric key parser 'x509' registered
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [bus 00-ff]
+pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+pci 0000:00:01.0: [1af4:1009] type 00 class 0x000200
+pci 0000:00:01.0: reg 0x10: [io  0x0000-0x001f]
+pci 0000:00:01.0: reg 0x14: [mem 0x00000000-0x00000fff]
+pci 0000:00:01.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+pci 0000:00:02.0: [1af4:1000] type 00 class 0x020000
+pci 0000:00:02.0: reg 0x10: [io  0x0000-0x001f]
+pci 0000:00:02.0: reg 0x14: [mem 0x00000000-0x00000fff]
+pci 0000:00:02.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+pci 0000:00:02.0: reg 0x30: [mem 0x00000000-0x0003ffff pref]
+pci 0000:00:03.0: [1af4:1001] type 00 class 0x010000
+pci 0000:00:03.0: reg 0x10: [io  0x0000-0x007f]
+pci 0000:00:03.0: reg 0x14: [mem 0x00000000-0x00000fff]
+pci 0000:00:03.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+pci 0000:00:02.0: BAR 6: assigned [mem 0x10000000-0x1003ffff pref]
+pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+pci 0000:00:02.0: BAR 4: assigned [mem 0x8000004000-0x8000007fff 64bit pref]
+pci 0000:00:03.0: BAR 4: assigned [mem 0x8000008000-0x800000bfff 64bit pref]
+pci 0000:00:01.0: BAR 1: assigned [mem 0x10040000-0x10040fff]
+pci 0000:00:02.0: BAR 1: assigned [mem 0x10041000-0x10041fff]
+pci 0000:00:03.0: BAR 1: assigned [mem 0x10042000-0x10042fff]
+pci 0000:00:03.0: BAR 0: assigned [io  0x1000-0x107f]
+pci 0000:00:01.0: BAR 0: assigned [io  0x1080-0x109f]
+pci 0000:00:02.0: BAR 0: assigned [io  0x10a0-0x10bf]
+EINJ: ACPI disabled.
+virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+virtio-pci 0000:00:02.0: enabling device (0000 -> 0003)
+virtio-pci 0000:00:03.0: enabling device (0000 -> 0003)
+SuperH (H)SCI(F) driver initialized
+STM32 USART driver initialized
+loop: module loaded
+virtio_blk virtio2: 2/0/0 default/read/poll queues
+virtio_blk virtio2: [vda] 83886080 512-byte logical blocks (42.9 GB/40.0 GiB)
+ vda: vda1 vda2
+megasas: 07.725.01.00-rc1
+physmap-flash 0.flash: physmap platform flash device: [mem 0x00000000-0x03ffffff]
+0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+erase region 0: offset=0x0,size=0x40000,blocks=256
+physmap-flash 0.flash: physmap platform flash device: [mem 0x04000000-0x07ffffff]
+0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+Intel/Sharp Extended Query Table at 0x0031
+Using buffer write method
+erase region 0: offset=0x0,size=0x40000,blocks=256
+Concatenating MTD devices:
+(0): "0.flash"
+(1): "0.flash"
+into device "0.flash"
+tun: Universal TUN/TAP device driver, 1.6
+thunder_xcv, ver 1.0
+thunder_bgx, ver 1.0
+nicpf, ver 1.0
+hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+hns3: Copyright (c) 2017 Huawei Corporation.
+hclge is initializing
+e1000: Intel(R) PRO/1000 Network Driver
+e1000: Copyright (c) 1999-2006 Intel Corporation.
+e1000e: Intel(R) PRO/1000 Network Driver
+e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+igb: Intel(R) Gigabit Ethernet Network Driver
+igb: Copyright (c) 2007-2014 Intel Corporation.
+igbvf: Intel(R) Gigabit Virtual Function Network Driver
+igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+sky2: driver version 1.30
+VFIO - User Level meta-driver version: 0.3
+usbcore: registered new interface driver usb-storage
+rtc-pl031 9010000.pl031: registered as rtc0
+rtc-pl031 9010000.pl031: setting system clock to 2024-11-22T01:00:31 UTC (1732237231)
+i2c_dev: i2c /dev entries driver
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+Synopsys Designware Multimedia Card Interface Driver
+sdhci-pltfm: SDHCI platform and OF driver helper
+ledtrig-cpu: registered to indicate activity on CPUs
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+hw perfevents: enabled with armv8_pmuv3 PMU driver, 13 counters available
+NET: Registered PF_PACKET protocol family
+9pnet: Installing 9P2000 support
+Key type dns_resolver registered
+registered taskstats version 1
+Loading compiled-in X.509 certificates
+input: gpio-keys as /devices/platform/gpio-keys/input/input0
+clk: Disabling unused clocks
+ALSA device list:
+  No soundcards found.
+uart-pl011 9000000.pl011: no DMA platform data
+EXT4-fs (vda2): INFO: recovery required on readonly filesystem
+EXT4-fs (vda2): write access will be enabled during recovery
+EXT4-fs (vda2): recovery complete
+EXT4-fs (vda2): mounted filesystem cced9c97-6255-4c12-9e8e-0946d87656c2 ro with ordered data mode. Quota mode: none.
+VFS: Mounted root (ext4 filesystem) readonly on device 254:2.
+devtmpfs: mounted
+Freeing unused kernel memory: 9152K
+Run /sbin/init as init process
+  with arguments:
+    /sbin/init
+  with environment:
+    HOME=/
+    TERM=linux
+systemd[1]: systemd v255-17.oe2403 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA -SMACK +SECCOMP +GCRYPT +GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE -TPM2 +BZIP2 +LZ4 +XZ +ZLIB -ZSTD -BPF_FRAMEWORK +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=legacy)
+systemd[1]: Detected virtualization qemu.
+systemd[1]: Detected architecture arm64.
+systemd[1]: Hostname set to .
+systemd-rc-local-generator[70]: /etc/rc.d/rc.local is not marked executable, skipping.
+systemd[1]: /usr/lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+systemd[1]: Queued start job for default target Multi-User System.
+systemd[1]: Created slice Slice /system/getty.
+systemd[1]: Created slice Slice /system/modprobe.
+systemd[1]: Created slice Slice /system/serial-getty.
+systemd[1]: Created slice Slice /system/sshd-keygen.
+systemd[1]: Created slice User and Session Slice.
+systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+systemd[1]: Arbitrary Executable File Formats File System Automount Point was skipped because of an unmet condition check (ConditionPathExists=/proc/sys/fs/binfmt_misc).
+systemd[1]: Reached target Local Encrypted Volumes.
+systemd[1]: Reached target Local Integrity Protected Volumes.
+systemd[1]: Reached target Path Units.
+systemd[1]: Reached target Remote Encrypted Volumes.
+systemd[1]: Reached target Remote File Systems.
+systemd[1]: Reached target Slice Units.
+systemd[1]: Reached target Swaps.
+systemd[1]: Reached target Local Verity Protected Volumes.
+systemd[1]: Listening on Process Core Dump Socket.
+systemd[1]: Listening on initctl Compatibility Named Pipe.
+systemd[1]: Listening on Journal Socket (/dev/log).
+systemd[1]: Listening on Journal Socket.
+systemd[1]: Listening on udev Control Socket.
+systemd[1]: Listening on udev Kernel Socket.
+systemd[1]: Mounting Huge Pages File System...
+systemd[1]: Mounting POSIX Message Queue File System...
+systemd[1]: Mounting Kernel Debug File System...
+systemd[1]: Kernel Trace File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/tracing).
+systemd[1]: Mounting Temporary Directory /tmp...
+systemd[1]: Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/lib/modules/6.6.0/modules.devname).
+systemd[1]: Starting Load Kernel Module configfs...
+systemd[1]: Starting Load Kernel Module drm...
+systemd[1]: Starting Load Kernel Module fuse...
+systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+systemd[1]: systemd-journald.service: (This warning is only shown for the first unit using IP firewalling.)
+systemd[1]: Starting Journal Service...
+systemd[1]: Load Kernel Modules was skipped because no trigger condition checks were met.
+systemd[1]: Starting Generate network units from Kernel command line...
+systemd[1]: Starting Remount Root and Kernel File Systems...
+systemd[1]: Starting Apply Kernel Variables...
+systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+systemd-journald[108]: Collecting audit messages is disabled.
+systemd[1]: Starting Coldplug All udev Devices...
+systemd[1]: Mounted Huge Pages File System.
+systemd[1]: Mounted POSIX Message Queue File System.
+systemd[1]: Started Journal Service.
+EXT4-fs (vda2): re-mounted cced9c97-6255-4c12-9e8e-0946d87656c2 r/w. Quota mode: none.
+systemd-journald[108]: Received client request to flush runtime journal.
+virtio_net virtio1 enp0s2: renamed from eth0
+FAT-fs (vda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+capability: warning: `yum' uses 32-bit capabilities (legacy support in use)
+systemd-rc-local-generator[757]: /etc/rc.d/rc.local is not marked executable, skipping.
+php[896]: memfd_create() called without MFD_EXEC or MFD_NOEXEC_SEAL set
